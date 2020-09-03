@@ -7,7 +7,6 @@ pipeline {
     }
 
     stages {
-        
         // Adding Sonar Analysis Stage for Static Scanning of Code for Potential Coe Quality issues
         stage('Sonar Analysis'){
           steps {
