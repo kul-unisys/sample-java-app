@@ -18,7 +18,7 @@ pipeline {
 		stage('Run Configuration Checks using Ansible'){
 			steps{
 				git credentialsId: 'github-cred', url: 'https://github.com/kul-unisys/ansible-roles.git'
-				ansiblePlaybook become: true, installation: 'ansible', inventory: 'hosts', playbook: 'configure-kubernetes-cluster.yaml'
+				//ansiblePlaybook become: true, installation: 'ansible', inventory: 'hosts', playbook: 'configure-kubernetes-cluster.yaml'
 			}
 		}
         // Adding Sonar Analysis Stage for Static Scanning of Code for Potential Coe Quality issues
