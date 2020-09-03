@@ -1,5 +1,8 @@
 pipeline {
-    agent any
+    // Added option to run build on specific agent
+	agent {
+		label ('kul')
+	}
     
     // Adding Environemtn Section define Build Specific Environment Variables
     environment {
