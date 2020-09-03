@@ -29,5 +29,11 @@ pipeline {
                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
             }
         }
+		
+		stage('OWASP DC Scan'){
+			steps{
+				sh "mvn clean install"
+			}
+		}
     }
 }
