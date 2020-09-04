@@ -43,7 +43,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub OWNER Apache Maven Packages</name>
-			<url>https://github.com/kul-unisys/sample-java-app</url>
+			<url>https://maven.pkg.github.com/kul-unisys/sample-java-app</url>
 		</repository>
 	</distributionManagement>
 
