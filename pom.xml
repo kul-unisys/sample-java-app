@@ -43,7 +43,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub OWNER Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/kmayer10/epsilon</url>
+			<url>https://maven.pkg.github.com/kmayer10/kul-unisys</url>
 		</repository>
 	</distributionManagement>
 
