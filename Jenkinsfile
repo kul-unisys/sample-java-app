@@ -7,6 +7,7 @@ pipeline {
     // Adding Environemtn Section define Build Specific Environment Variables
     environment {
         JAVA_HOME = "/etc/alternatives/java_sdk_openjdk"
+	    BRANCH_NAME = ${GIT_BRANCH}
     }
 
     tools {
@@ -25,7 +26,7 @@ pipeline {
 	stage('Sonar Analysis'){
 	  steps {
 	    git credentialsId: 'github-cred', url: 'https://github.com/kul-unisys/sample-java-app.git'
-            sh "mvn -Dmaven.test.failure.ignore=true clean package sonar:sonar"
+            sh "mvn -Dmaven.test.failure.ignore=true clean package sonar:sonar -Dsonar.branch.name=${BRANCH_NAME}"
 	  }
 	}
         stage('Build') {
