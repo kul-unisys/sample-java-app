@@ -53,7 +53,7 @@ pipeline {
 		}
 	    stage('Distribute Package'){
 		    steps{
-			    sh "mvn deploy -Dregistry=https://maven.pkg.github.com/kul-unisys -Dtoken=44b6296de2d5b579899b200ce16c073be0ba53b3"
+			    sh "mvn deploy --settings mvn-settings.xml"
 		    }
 	    }
     }
