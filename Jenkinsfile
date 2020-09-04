@@ -56,5 +56,9 @@ pipeline {
 			    sh "mvn deploy --settings mvn-settings.xml"
 		    }
 	    }
-    }
+	    stage('Scan Base Image'){
+		    steps{
+			    sh label: '', script: 'trivy image --format template --template "@junit.tpl" -o image-scan-report.xml kulbhushanmayer/ls-demo:2.0'
+		    }
+	    }
 }
