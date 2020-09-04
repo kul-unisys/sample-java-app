@@ -52,6 +52,7 @@ pipeline {
 				publishHTML([allowMissing: true, alwaysLinkToLastBuild: true, keepAll: true, reportDir: '', reportFiles: 'target/dependency-check-report.html', reportName: 'Dependency Checks Report', reportTitles: ''])			}
 		}
 	    stage('Distribute Package'){
+		    when { branch "release" }
 		    steps{
 			    sh "mvn deploy --settings mvn-settings.xml"
 		    }
