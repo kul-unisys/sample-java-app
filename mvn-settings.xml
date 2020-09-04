@@ -20,7 +20,7 @@
         <repository>
           <id>github</id>
           <name>GitHub OWNER Apache Maven Packages</name>
-          <url>https://maven.pkg.github.com/kmayer10/epsilon</url>
+          <url>https://maven.pkg.github.com/kul-unisys/sample-java-app</url>
         </repository>
       </repositories>
     </profile>
@@ -30,7 +30,7 @@
 		<server>
 			<id>github</id>
 			<username>kmayer10</username>
-			<password>44b6296de2d5b579899b200ce16c073be0ba53b3</password>
+			<password>59e5fe52ba9643338c609062e454a9a72c1434bb</password>
 		</server>
 	</servers>
 </settings>
