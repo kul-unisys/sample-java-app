@@ -7,7 +7,7 @@
   <version>1.0</version>
   <name>Liquor Shop Demo</name>
   <url>https://thinknyx.com</url>
-	
+	<!-- This is demo code for PR Feature -->
   <properties>
 	<sonar.projectKey>kmayer10_liquor-shop-demo</sonar.projectKey>
   	<sonar.organization>kmayer10</sonar.organization>
