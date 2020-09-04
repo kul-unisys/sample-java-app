@@ -60,6 +60,7 @@ pipeline {
 	    stage('Scan Base Image'){
 		    steps{
 			    sh label: '', script: 'trivy image --format template --template "@junit.tpl" -o image-scan-report.xml kulbhushanmayer/ls-demo:2.0'
+			    junit allowEmptyResults: true, testResults: 'image-scan-report.xml'
 		    }
 	    }
     }
