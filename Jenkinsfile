@@ -62,4 +62,5 @@ pipeline {
 			    sh label: '', script: 'trivy image --format template --template "@junit.tpl" -o image-scan-report.xml kulbhushanmayer/ls-demo:2.0'
 		    }
 	    }
+    }
 }
