@@ -49,8 +49,7 @@ pipeline {
 		stage('OWASP DC Scan'){
 			steps{
 				sh "mvn clean install"
-				publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'target/dependency-check-report.html', reportName: 'Dependency Checks Report', reportTitles: ''])
-			}
+				publishHTML([allowMissing: true, alwaysLinkToLastBuild: true, keepAll: true, reportDir: '', reportFiles: 'target/dependency-check-report.html', reportName: 'Dependency Checks Report', reportTitles: ''])			}
 		}
 	    stage('Distribute Package'){
 		    steps{
