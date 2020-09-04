@@ -7,7 +7,7 @@ pipeline {
     // Adding Environemtn Section define Build Specific Environment Variables
     environment {
         JAVA_HOME = "/etc/alternatives/java_sdk_openjdk"
-	    BRANCH_NAME = ${GIT_BRANCH}
+	    BRANCH_NAME = "${GIT_BRANCH}"
     }
 
     tools {
