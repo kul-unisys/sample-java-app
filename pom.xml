@@ -48,7 +48,7 @@
 	</distributionManagement>
 
 	<build>
-		<finalName>LiquorShop</finalName>
+		<!--<finalName>LiquorShop</finalName>-->
 		<plugins>
 			<!--<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
